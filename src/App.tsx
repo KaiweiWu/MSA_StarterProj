@@ -5,8 +5,6 @@ import BananaLogo from './Banana.jpg';
 import MemeDetail from './components/MemeDetail';
 import MemeList from './components/MemeList';
 
-
-
 interface IState {
 	currentMeme: any,
 	memes: any[],
@@ -38,8 +36,6 @@ class App extends React.Component<{}, IState> {
 			<div className="header-wrapper">
 				<div className="container header">
 					<img src={BananaLogo} height='40'/>&nbsp; Banana Split &nbsp;
-					<li><a>Chatbot</a></li>
-					<li><a>Link 2</a></li>
 					<div className="btn btn-primary btn-action btn-add" onClick={this.onOpenModal}>Upload Photo</div>
 				</div>
 			</div>
@@ -56,9 +52,9 @@ class App extends React.Component<{}, IState> {
 			<Modal open={open} onClose={this.onCloseModal}>
 				<form>
 					<div className="form-group">
-						<label>Meme Title</label>
+						<label>Title</label>
 						<input type="text" className="form-control" id="meme-title-input" placeholder="Enter Title" />
-						<small className="form-text text-muted">You can edit any meme later</small>
+						<small className="form-text text-muted">You can edit later</small>
 					</div>
 					<div className="form-group">
 						<label>Tag</label>

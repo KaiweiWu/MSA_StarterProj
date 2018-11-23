@@ -43,9 +43,9 @@ export default class MemeDetail extends React.Component<IProps, IState> {
                 <Modal open={open} onClose={this.onCloseModal}>
                     <form>
                         <div className="form-group">
-                            <label>Meme Title</label>
+                            <label>Title</label>
                             <input type="text" className="form-control" id="meme-edit-title-input" placeholder="Enter Title"/>
-                            <small className="form-text text-muted">You can edit any meme later</small>
+                            <small className="form-text text-muted">You can edit later</small>
                         </div>
                         <div className="form-group">
                             <label>Tag</label>
